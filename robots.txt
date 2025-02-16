@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://boltm3.firstinspireskz.org/sitemap.xml
