@@ -6,6 +6,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+    <meta
+    name="description"
+    content="Bolt M3 AI Chat - A smart assistant for Team Bolt.m3 in Kazakhstan."
+  />
+  <meta name="author" content="Team Bolt.m3" />
+  <meta
+    name="keywords"
+    content="Bolt M3, Robotics, FTC, Kazakhstan, AI Chat"
+  />
+  <meta name="robots" content="index, follow" />
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.10/tailwindcss.min.js"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -18,6 +28,11 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+    rel="icon"
+    type="image/svg+xml"
+    href="https://boltm3.image.firstinspireskz.org/a.svg"
+  />
 
     <title>Bolt M3 AI Chat</title>
   </head>
@@ -25,7 +40,7 @@
   <body class="bg-[#2a2b2d] text-white font-montserrat">
     <nav class="flex items-center justify-between p-6 bg-[#1a1b1d] shadow-md">
       <img
-        src="https://ad2ab94.webp.ee/logo.webp"
+        src="https://boltm3.image.firstinspireskz.org/a.svg"
         alt="Logo"
         class="h-12 hover:scale-105 transition-transform duration-200 ease-in-out"
       />
@@ -80,11 +95,13 @@
     </nav>
 
     <!-- Main Content -->
-    <section class="flex flex-col items-center py-16 px-8">
-      <h1 class="text-4xl font-bold mb-6">Bolt M3 AI Chat 🤖</h1>
-      <p class="text-xl mb-12 text-center">
+    <section class="flex flex-col items-center py-16 px-4">
+      <!--      <h1 class="text-4xl font-bold mb-6">Bolt M3 AI Chat 🤖</h1>
+            <p class="text-xl mb-12 text-center">
         Chat with our AI 🤖 and get instant responses! 💬
-      </p>
+      </p>-->
+
+      
 
       <!-- Chatbox -->
       <div
@@ -169,7 +186,7 @@
         </div>
       </div>
       <div class="flex justify-center items-center">
-        <p class="text-lg">Built with ❤️ by Team Bolt.m3</p>
+        <p class="text-lg">Built by Team Bolt.m3</p>
       </div>
     </footer>
 
@@ -251,7 +268,7 @@
           } else {
             // 使用 GET 请求
             response = await fetch(
-              `https://rag.bolt-m3kz.workers.dev/?text=${encodeURIComponent(
+              `https://rag.api.firstinspireskz.org/?text=${encodeURIComponent(
                 input
               )}`,
               {

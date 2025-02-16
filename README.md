@@ -28,3 +28,5 @@ If you have any questions, feel free to reach out to me, at [arcbomi's GitHub](h
 
 
 
+thank to 
+https://github.com/Coding-with-Robby/infinite-logo-carousel/tree/starter

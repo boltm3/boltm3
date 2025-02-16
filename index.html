@@ -6,7 +6,49 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Bolt.m3 22801 - A competitive robotics team from Almaty, Kazakhstan, participating in the FIRST Tech Challenge (FTC)."
+    />
+    <meta
+      name="keywords"
+      content="Bolt.m3, FTC, robotics, FIRST Tech Challenge, Almaty, Kazakhstan, Team 22801"
+    />
+    <meta name="author" content="Bolt.m3 Team" />
+
     <title>Bolt.m3 22801</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bolt.m3 22801",
+        "url": "https://boltm3.firstinspireskz.org/",
+        "logo": "https://boltm3.image.firstinspireskz.org/a.svg",
+        "description": "Bolt.m3 22801 is a competitive robotics team from Almaty, Kazakhstan, participating in the FIRST Tech Challenge (FTC).",
+        "foundingDate": "2020",
+        "location": {
+          "@type": "Place",
+          "name": "Almaty, Kazakhstan"
+        },
+        "sameAs": [
+          "https://www.instagram.com/bolt.m3/",
+          "https://www.youtube.com/channel/UCuSTuLznWnVQ2FV-f8L-xHA",
+          "https://www.tiktok.com/@bolt.m3_ftc"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "bolt.m3kz@gmail.com",
+          "contactType": "ftc team support in Kazakhstan"
+        }
+      }
+    </script>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://boltm3.image.firstinspireskz.org/a.svg"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.10/tailwindcss.min.js"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -15,12 +57,18 @@
 
     <script src="/index.js"></script>
     <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body class="bg-[#2a2b2d] text-white font-montserrat">
+  <body class="bg-[#2a2b2d] text-white">
     <nav class="flex items-center justify-between p-6 bg-[#1a1b1d] shadow-md">
       <img
-        src="https://ad2ab94.webp.ee/logo.webp"
+        src="https://boltm3.image.firstinspireskz.org/a.svg"
         alt="Logo"
         class="h-12 hover:scale-105 transition-transform duration-200 ease-in-out"
       />
@@ -73,47 +121,198 @@
         </ul>
       </div>
     </nav>
-    <section class="text-center py-8 px-4 sm:px-8 lg:px-16">
-      <h1 class="text-3xl sm:text-4xl font-bold mb-6">Team Bolt.m3 22801</h1>
-      <p class="text-lg sm:text-xl mb-12">
-        We are a competitive robotics team in Almaty, Kazakhstan. Founded in
-        2020, our team comprises 12 high school students. We compete in the
-        FIRST Tech Challenge (FTC), an international robotics competition for
-        grades 7-12.
-      </p>
-      <img
-        src="https://ad2ab94.webp.ee/boltm3-24to25.jpg"
-        alt="Team Photo"
-        class="mx-auto rounded-lg shadow-xl mb-12 w-full sm:w-1/2 md:w-1/3 max-w-full"
-      />
-      <p class="text-2xl uppercase font-semibold mb-8">
-        <span class="text-white text-3xl sm:text-4xl">We </span>
-        <span class="text-red-600 text-3xl sm:text-4xl">thank</span>
-        <span class="text-white text-3xl sm:text-4xl"> all our </span>
-        <span class="text-red-600 text-3xl sm:text-4xl">sponsors!</span>
-        <br />
-        <span class="text-white text-base sm:text-lg"
-          >Without them we could not exist!</span
+
+    <!-- 主容器：使用 flex 布局垂直排列所有内容，并在元素间添加间距 -->
+    <div class="flex flex-col items-center gap-10">
+      <!-- 主要内容区域，包含团队介绍 -->
+      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+        <!-- 文本与介绍内容 -->
+        <div
+          class="flex flex-col justify-center gap-8 px-4 sm:px-6 md:px-8 lg:px-24 mx-auto"
         >
-      </p>
-      <div class="flex flex-wrap justify-center space-x-8 mb-12">
+          <!-- “Meet the Team” 介绍部分 -->
+          <div class="">
+            <div class="h-60 pt-9 flex flex-col justify-center gap-4">
+              <!-- 标题：左对齐 -->
+              <div
+                class="text-[#c1c1c1] text-2xl sm:text-3xl md:text-4xl font-medium font-['Inter'] uppercase self-start"
+              >
+                Meet the team
+              </div>
+
+              <!-- 团队口号：居中对齐 -->
+              <div
+                class="w-[280px] sm:w-[350px] md:w-[450px] lg:w-[590px] h-auto mx-auto"
+              >
+                <img src="https://boltm3.image.firstinspireskz.org/boltm3-slogan.svg" alt="slogan" />
+              </div>
+
+              <!-- 箭头图标：右对齐 -->
+              <div class="self-end">
+                <img src="https://boltm3.image.firstinspireskz.org/under-solgan-arrow.svg" alt="arrow" />
+              </div>
+            </div>
+
+            <!-- 团队简介 -->
+            <div
+              class="max-w-[90%] sm:max-w-[395px] md:max-w-[480px] lg:max-w-[590px] text-white text-lg font-normal font-['Inter'] leading-normal tracking-tight text-center sm:text-left mx-auto"
+            >
+              We are a competitive robotics team in Almaty, Kazakhstan. Founded
+              in 2020, our team comprises 12 high school students. We compete in
+              the FIRST Tech Challenge (FTC), an international robotics
+              competition for grades 7-12.
+            </div>
+
+            <!-- “See Our Team” 按钮 -->
+            <div
+              class="block transition-transform duration-200 hover:scale-105"
+            >
+              <a href="/team" class="">
+                <div
+                  class="relative w-full max-w-[590px] h-16 sm:h-[70px] md:h-[85px] lg:h-[101px]"
+                >
+                  <!-- 底部红色 SVG 按钮背景 -->
+                  <div class="absolute inset-0">
+                    <svg
+                      class="w-full h-full"
+                      viewBox="0 0 590 61"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0H565.16L590 28.411V61H36.3762L0 28.411V0Z"
+                        fill="#EA232A"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- 按钮文本 -->
+                  <div
+                    class="absolute inset-0 flex items-center pl-6 sm:pl-10 md:pl-14"
+                  >
+                    <span
+                      class="text-white text-lg sm:text-xl md:text-2xl font-bold font-['Inter'] tracking-tight"
+                    >
+                      SEE OUR TEAM
+                    </span>
+                  </div>
+
+                  <!-- 按钮右侧箭头 -->
+                  <div
+                    class="absolute top-1/2 right-3 sm:right-5 transform -translate-y-1/2"
+                  >
+                    <svg
+                      class="w-4 h-6 sm:w-5 sm:h-8"
+                      viewBox="0 0 19 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.904762 0H10.8571L19 17.2394L9.95238 34H0L9.04762 17.2394L0.904762 0Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 团队照片 -->
         <img
-          src="https://ad2ab94.webp.ee/logo-chevron.png"
-          alt="Chevron Sponsor"
-          class="w-32 sm:w-52 rounded-lg shadow-lg object-contain mb-4 max-w-full"
-        />
-        <img
-          src="https://ad2ab94.webp.ee/logo-caravan-of-knowledge.webp"
-          alt="Caravan of Knowledge Sponsor"
-          class="w-32 sm:w-52 rounded-lg shadow-lg object-contain mb-4 max-w-full"
-        />
-        <img
-          src="https://ad2ab94.webp.ee/logo-zertte-studio.webp"
-          alt="Zertte Studio Sponsor"
-          class="w-32 sm:w-52 rounded-lg shadow-lg object-contain mb-4 max-w-full"
+          src="https://ad2ab94.webp.ee/boltm3-24to25.jpg"
+          alt="boltm3-photo"
+          class="w-64 h-auto"
         />
       </div>
-    </section>
+
+      <!-- 关于我们部分 -->
+      <div
+        class="flex flex-col items-center justify-center w-full mt-8 gap-4 md:gap-12"
+      >
+        <div
+          class="w-full max-w-screen-lg flex flex-col lg:flex-row justify-between items-center gap-4 md:gap-12"
+        >
+          <!-- “ABOUT US” 标题 -->
+          <div
+            class="text-white text-5xl sm:text-6xl md:text-7xl font-bold font-['Tomorrow'] leading-tight tracking-tight"
+          >
+            ABOUT US
+          </div>
+
+          <!-- SVG 图标 (lg 以上可见) -->
+          <div data-svg-wrapper class="hidden lg:block">
+            <img src="https://boltm3.image.firstinspireskz.org/about-us-arrow.svg" alt="SVG 图标" />
+          </div>
+        </div>
+        <!-- YouTube 视频嵌入 -->
+        <iframe
+          class="w-full max-w-screen-md aspect-video"
+          src="https://www.youtube.com/embed/r1xZxBZkRVA?rel=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- 我们的成就部分 -->
+      <div
+        class="w-full flex flex-col justify-center items-center py-6 sm:py-8 md:py-10"
+      >
+        <!-- 标题 -->
+        <div class="text-center">
+          <h2
+            class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold font-['Tomorrow'] leading-tight tracking-tight inline-block px-4"
+          >
+            OUR
+            <span
+              class="border-b-4 sm:border-b-6 md:border-b-8 border-[#ea232a]"
+              >ACHIEVEMENTS</span
+            >
+          </h2>
+        </div>
+
+        <!-- 文字描述 -->
+        <div class="mt-4 sm:mt-6 px-6 sm:px-12 md:px-24 text-center">
+          <p
+            class="text-[#727272] text-4xl md:text-5xl lg:text-8xl font-semibold font-['Tomorrow', 'Montserrat', 'Inter', sans-serif] leading-tight tracking-tight"
+          >
+            Кудай буйырса инспайр мен WAK
+          </p>
+        </div>
+      </div>
+
+      <!-- 赞助商部分 -->
+      <div class="flex flex-col items-center w-full">
+        <!-- 标题 -->
+        <div class="w-full text-center py-6 sm:py-8 md:py-10">
+          <h2
+            class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold font-['Tomorrow'] leading-tight tracking-tight inline-block px-4"
+          >
+            THANKS TO OUR
+            <span
+              class="border-b-4 sm:border-b-6 md:border-b-8 border-[#ea232a]"
+            >
+              SPONSORS
+            </span>
+          </h2>
+        </div>
+
+        <!-- 赞助商 Logo 展示 -->
+        <div class="w-full">
+          <iframe
+            src="logos.html"
+            class="w-full"
+            height="100%"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </div>
 
     <footer class="bg-[#1a1b1d] p-6 mt-16">
       <div class="flex justify-center items-center mb-8 space-x-16">
@@ -165,7 +364,7 @@
         </div>
       </div>
       <div class="flex justify-center items-center">
-        <p class="text-lg">Built with ❤️ by Team Bolt.m3</p>
+        <p class="text-lg">Built by Team Bolt.m3</p>
       </div>
     </footer>
   </body>
